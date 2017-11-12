@@ -8,8 +8,7 @@
                         <b-btn variant="link" id="buttons"><router-link id="buttons" to="/">首页 <i class="fa fa-home"></i></router-link></b-btn>
                         <b-btn variant="link" id="buttons"><router-link id="buttons" to="/aboutUs">关于我们</router-link></b-btn>
                         <b-btn variant="link" id="buttons" v-b-toggle.ywlyCL class="m-1">业务领域 <i class="fa fa-caret-down" aria-hidden="true"></i></b-btn>
-                        <b-btn variant="link" id="buttons">服务指南</b-btn>
-                        <b-btn variant="link" id="buttons">律师团队</b-btn>
+                        <b-btn variant="link" id="buttons"><router-link id="buttons" to="/staffs">律师团队</router-link></b-btn>
                         <b-btn variant="link" id="buttons">成功案例</b-btn>
                         <b-btn variant="link" id="buttons">法律法规</b-btn>
                         <b-btn variant="link" id="buttons">新闻资讯</b-btn>
