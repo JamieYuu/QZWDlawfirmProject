@@ -6,13 +6,13 @@
             <div id="headerImgPart">
                 <b-img id="headerImg" :src="headerImg"/>
                 <div id="aboutUsTextDiv">
-                    <p id="aboutUsText">竞争,贸易与监管</p>
+                    <p id="aboutUsText">房地产</p>
                 </div>
             </div>
 
             <br/>
             <div id="suoying">
-                <p><router-link to="/allBusiness">业务领域 </router-link> <i class="fa fa-angle-right" aria-hidden="true"></i> 竞争,贸易与监管</p>
+                <p><router-link to="/allBusiness">业务领域 </router-link> <i class="fa fa-angle-right" aria-hidden="true"></i> 房地产</p>
             </div>
             <hr id="hr1">
 
@@ -140,7 +140,7 @@ export default {
     return {
       infoP: '  Q Z  & W D (JIANG XI)   L A W    F I R M',
       logoURL: require('~/assets/logo.jpg'),
-      headerImg: require('~/assets/CTSImg.jpg'),
+      headerImg: require('~/assets/REImg.jpg'),
       wxImg: require('~/assets/wx.jpeg')
     }
   },
@@ -219,7 +219,7 @@ export default {
 }
 
 #aboutUsTextDiv {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     color: white;
     background-color: rgb(37, 146, 221);

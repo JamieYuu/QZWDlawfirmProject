@@ -25,7 +25,7 @@
                                 </tr>
                                 <tr>
                                     <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/business/Intellectual-property">知识产权</router-link></b-btn></td>
-                                    <td><b-btn variant="link" id="tablebuttons">房地产</b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/business/real-estate">房地产</router-link></b-btn></td>
                                     <td><b-btn variant="link" id="tablebuttons">争议解决与诉讼</b-btn></td>
                                 </tr>
                                 <tr>
