@@ -43,7 +43,7 @@
                             <table id="newsDDtable">
                                 <tr>
                                     <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/knowledge">全部</router-link></b-btn></td>
-                                    <td><b-btn variant="link" id="tablebuttons">文章</b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/news/articles">文章</router-link></b-btn></td>
                                     <td><b-btn variant="link" id="tablebuttons">律所新闻</b-btn></td>
                                     <td><b-btn variant="link" id="tablebuttons">法规解读</b-btn></td>
                                 </tr>

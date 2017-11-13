@@ -20,7 +20,7 @@
                         <b-row>
                             <b-col>
                                 <p class="articleDes">查阅我们对影响您业务的法律问题的最新见解</p>
-                                <b-btn variant="outline-primary">查阅更多文章 <i class="fa fa-angle-right" aria-hidden="true"></i></b-btn>
+                                <b-btn variant="outline-primary"><router-link to="/news/articles" class="links">查阅更多文章 <i class="fa fa-angle-right" aria-hidden="true"></i></router-link></b-btn>
                             </b-col>
                             <b-col>
                                 <p class="articleTitle">文章标题1</p>
@@ -145,6 +145,10 @@ export default {
 </script>
 
 <style scoped>
+.links:hover {
+    color: white;
+}
+
 .articleTitle {
     color: gray;
     font-size: 20px;
