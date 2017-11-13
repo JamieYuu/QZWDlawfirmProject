@@ -10,8 +10,7 @@
                         <b-btn variant="link" id="buttons" v-b-toggle.ywlyCL class="m-1">业务领域 <i class="fa fa-caret-down" aria-hidden="true"></i></b-btn>
                         <b-btn variant="link" id="buttons"><router-link id="buttons" to="/staffs">律师团队</router-link></b-btn>
                         <b-btn variant="link" id="buttons">成功案例</b-btn>
-                        <b-btn variant="link" id="buttons">法律法规</b-btn>
-                        <b-btn variant="link" id="buttons">新闻资讯</b-btn>
+                        <b-btn variant="link" id="buttons" v-b-toggle.newsCL>新闻与文章 <i class="fa fa-caret-down" aria-hidden="true"></i></b-btn>
                         <b-btn variant="link" id="buttons">律所文化和党建</b-btn>
                     </b-button-group>
                     <b-collapse id="ywlyCL">
@@ -35,6 +34,18 @@
                                 <tr>
                                     <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/business/arbitration">仲裁</router-link></b-btn></td>
                                     <td><b-btn variant="link" id="tablebuttons">证券</b-btn></td>
+                                </tr>
+                            </table>
+                        </b-card>
+                    </b-collapse>
+                    <b-collapse id="newsCL">
+                        <b-card id="newsDD">
+                            <table id="newsDDtable">
+                                <tr>
+                                    <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/knowledge">全部</router-link></b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons">文章</b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons">律所新闻</b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons">法规解读</b-btn></td>
                                 </tr>
                             </table>
                         </b-card>
@@ -67,7 +78,7 @@
                             <br/>
                             <p id="decText">版权所有:江西求正沃德律师事务所</p>
                             <p id="decText">Email: qz.jz.lawfirm@163.com</p>
-                            <p id="decText">技术支持:Jiazheng Yu</p>
+                            <p id="decText">技术支持:Jiazheng Yu <i class="fa fa-envelope" aria-hidden="true"></i> jzjaimeyu@gmail.com</p>
                             <p id="decText">@江西求正沃德律师事务所 2017. 赣ICP备 06003918号</p>
                         </div>
                     </b-col>
@@ -107,9 +118,17 @@ export default {
 #ywlyDD {
     z-index: 3;
     background-color: black;
-    width: 430px;
+    width: 400px;
     height: 180px;
-    left: 130px;
+    left: 40px;
+}
+
+#newsDD {
+    z-index: 3;
+    background-color: black;
+    width: 320px;
+    height: 60px;
+    left: 370px;
 }
 
 #logoimg {
