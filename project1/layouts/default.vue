@@ -4,49 +4,51 @@
     <div id="indexheader">
                 <div id="indexheaderbg"></div>
                 <div id="headerButtons">
-                    <b-button-group>
-                        <b-btn variant="link" id="buttons"><router-link id="buttons" to="/">首页 <i class="fa fa-home"></i></router-link></b-btn>
-                        <b-btn variant="link" id="buttons"><router-link id="buttons" to="/aboutUs">关于我们</router-link></b-btn>
+                        <b-btn variant="link" id="buttons"><nuxt-link id="buttons" to="/">首页 <i class="fa fa-home"></i></nuxt-link></b-btn>
+                        <b-btn variant="link" id="buttons"><nuxt-link id="buttons" to="/aboutUs">关于我们</nuxt-link></b-btn>
                         <b-btn variant="link" id="buttons" v-b-toggle.ywlyCL class="m-1">业务领域 <i class="fa fa-caret-down" aria-hidden="true"></i></b-btn>
-                        <b-btn variant="link" id="buttons"><router-link id="buttons" to="/staffs">律师团队</router-link></b-btn>
+                        <b-btn variant="link" id="buttons"><nuxt-link id="buttons" to="/staffs">律师团队</nuxt-link></b-btn>
                         <b-btn variant="link" id="buttons">成功案例</b-btn>
                         <b-btn variant="link" id="buttons" v-b-toggle.newsCL>新闻与文章 <i class="fa fa-caret-down" aria-hidden="true"></i></b-btn>
                         <b-btn variant="link" id="buttons">律所文化和党建</b-btn>
-                    </b-button-group>
                     <b-collapse id="ywlyCL">
                         <b-card id="ywlyDD">
                             <table id="ywlyDDtable">
+                                <tbody>
                                 <tr>
-                                    <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/allBusiness">全部</router-link></b-btn></td>
-                                    <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/business/competition-trade-Supervision">竞争,贸易与监管</router-link></b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons"><nuxt-link id="buttons" to="/allBusiness">全部</nuxt-link></b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons"><nuxt-link id="buttons" to="/business/competition-trade-Supervision">竞争,贸易与监管</nuxt-link></b-btn></td>
                                     <td><b-btn variant="link" id="tablebuttons">私募股权</b-btn></td>
                                 </tr>
                                 <tr>
-                                    <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/business/Intellectual-property">知识产权</router-link></b-btn></td>
-                                    <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/business/real-estate">房地产</router-link></b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons"><nuxt-link id="buttons" to="/business/Intellectual-property">知识产权</nuxt-link></b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons"><nuxt-link id="buttons" to="/business/real-estate">房地产</nuxt-link></b-btn></td>
                                     <td><b-btn variant="link" id="tablebuttons">争议解决与诉讼</b-btn></td>
                                 </tr>
                                 <tr>
-                                    <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/business/bank-finance">银行与融资</router-link></b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons"><nuxt-link id="buttons" to="/business/bank-finance">银行与融资</nuxt-link></b-btn></td>
                                     <td><b-btn variant="link" id="tablebuttons">破产重组</b-btn></td>
                                     <td><b-btn variant="link" id="tablebuttons">税务</b-btn></td>
                                 </tr>
                                 <tr>
-                                    <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/business/arbitration">仲裁</router-link></b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons"><nuxt-link id="buttons" to="/business/arbitration">仲裁</nuxt-link></b-btn></td>
                                     <td><b-btn variant="link" id="tablebuttons">证券</b-btn></td>
                                 </tr>
+                                </tbody>
                             </table>
                         </b-card>
                     </b-collapse>
                     <b-collapse id="newsCL">
                         <b-card id="newsDD">
                             <table id="newsDDtable">
+                                <tbody>
                                 <tr>
-                                    <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/knowledge">全部</router-link></b-btn></td>
-                                    <td><b-btn variant="link" id="tablebuttons"><router-link id="buttons" to="/news/articles">文章</router-link></b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons"><nuxt-link id="buttons" to="/knowledge">全部</nuxt-link></b-btn></td>
+                                    <td><b-btn variant="link" id="tablebuttons"><nuxt-link id="buttons" to="/news/articles">文章</nuxt-link></b-btn></td>
                                     <td><b-btn variant="link" id="tablebuttons">律所新闻</b-btn></td>
                                     <td><b-btn variant="link" id="tablebuttons">法规解读</b-btn></td>
                                 </tr>
+                                </tbody>
                             </table>
                         </b-card>
                     </b-collapse>
@@ -56,9 +58,9 @@
                     <h1 id="midText">江西求正沃德律师事务所</h1>
                     <p id="botText">{{infoP}}</p>
                 </div>
-                <router-link to="/" tag="div" id="indexheaderlogo">
+                <nuxt-link to="/" tag="div" id="indexheaderlogo">
                     <b-img id="logoimg" :src="logoURL" />
-                </router-link>
+                </nuxt-link>
             </div>
 
     <nuxt/>
